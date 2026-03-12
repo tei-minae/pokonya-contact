@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特定商取引法に基づく開示請求 - ぽこにゃの掘り出し物</title>
+    <style>
+        :root {
+            --primary-color: #5d4037;
+            --background-color: #f5f5f5;
+            --container-bg: #ffffff;
+            --text-color: #333;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: var(--container-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+
+        .notice {
+            background-color: #fff9c4;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+            border-left: 4px solid #fbc02d;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: opacity 0.3s;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>特定商取引法に基づく開示請求</h1>
+
+        <div class="notice">
+            本フォームは、特定商取引法に基づき、当ショップ運営者の氏名、住所、電話番号等の情報開示を求めるための専用窓口です。
+        </div>
+
+        <p>開示を希望される方は、以下の項目をすべてご記入の上、送信してください。内容を確認後、合理的な期間内に電子メールにて回答いたします。</p>
+
+        <form action="https://ssgform.com/s/n2W0qraNSNzv" method="POST">
+            <!-- カテゴリを固定で送信 -->
+            <input type="hidden" name="category" value="特定商取引法に基づく開示請求">
+
+            <div class="form-group">
+                <label for="name">お名前（フルネーム）</label>
+                <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
+            </div>
+            <div class="form-group">
+                <label for="email">回答先メールアドレス</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="order_id">注文番号（既にご購入済みの場合）</label>
+                <input type="text" id="order_id" name="order_id" placeholder="例：12345678">
+            </div>
+            <div class="form-group">
+                <label for="message">請求の趣旨</label>
+                <textarea id="message" name="message" required>特定商取引法に基づく事業者情報の開示を希望します。</textarea>
+            </div>
+            <button type="submit" class="submit-btn">開示請求を送信する</button>
+        </form>
+
+        <a href="index.html" class="back-link">← 通常のお問い合わせフォームはこちら</a>
+
+        <footer>
+            &copy; 2026 pokonya - Raccoon Shop
+        </footer>
+    </div>
+</body>
+
+</html>

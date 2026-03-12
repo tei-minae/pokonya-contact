@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导入教程 - pokonya Raccoon Shop</title>
+    <style>
+        :root {
+            --primary: #5d4037;
+            --bg: #f5f5f5;
+            --card: #fff;
+            --border: #ddd;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: var(--card);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .lang {
+            text-align: right;
+            margin-bottom: 16px;
+            font-size: .8rem;
+        }
+
+        .lang a {
+            margin-left: 8px;
+            text-decoration: none;
+            color: var(--primary);
+            padding: 2px 6px;
+            border: 1px solid var(--primary);
+            border-radius: 4px;
+        }
+
+        .lang a:hover,
+        .lang strong {
+            background: var(--primary);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+            margin-top: 30px;
+            font-size: 1.3rem;
+        }
+
+        .step {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
+        }
+
+        .warning {
+            background: #fff3e0;
+            border-left: 5px solid #ff9800;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .tip {
+            background: #e8f5e9;
+            border-left: 5px solid #4caf50;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 12px;
+            color: var(--primary);
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lang">
+            <a href="usage.html">JP</a>
+            <a href="usage_en.html">EN</a>
+            <a href="usage_ko.html">KO</a>
+            <strong>ZH</strong>
+        </div>
+        <h1>使用说明 (Manual)</h1>
+
+        <p>感谢您购买“奶油乳贴”。本产品专为配合 <strong>Modular Avatar</strong> 使用而设计，导入非常简单。</p>
+
+        <h2>📋 事前准备</h2>
+        <div class="step">
+            请在导入本软件包之前，先在 Unity 项目中安装以下工具：
+            <ul>
+                <li><strong>lilToon</strong> (着色器)</li>
+                <li><strong>Modular Avatar</strong> (换装工具)</li>
+            </ul>
+        </div>
+
+        <h2>🚀 导入步骤</h2>
+        <div class="step">
+            <ol>
+                <li>导入 UnityPackage。</li>
+                <li>从 <code>Prefabs</code> 文件夹内的6种颜色变体中选择一个。</li>
+                <li>将所选的预制件(Prefab)直接拖放到场景中 <strong>Avatar 对象根目录下</strong>。</li>
+            </ol>
+        </div>
+
+        <div class="warning">
+            ⚠️ 注意：导入后模型默认不显示！<br>
+            模型初始状态设为隐藏。在 VRChat 中通过 Expression Menu 将开关设为 ON 后才会出现。
+        </div>
+
+        <h2>🛠 调整方法</h2>
+        <p>请根据 Avatar 的胸部大小进行以下调整：</p>
+        <div class="tip">
+            <strong>形态键(Shapekey)微调：</strong><br>
+            模型搭载了多个用于调整位置和尺寸的形态键。请根据 Avatar 的身材进行调整，使其完美贴合。
+        </div>
+
+        <h2>💡 在其他 Avatar 上使用时</h2>
+        <p>本产品以“小信浓 (Shinano)”为基准制作，具有极高的“Mochi Fitter”适配性。在其他 Avatar 上导入时，强烈建议配合使用 <strong>Mochi Fitter</strong> 进行适配。
+        </p>
+
+        <footer>
+            <a href="index_zh.html" class="back-link">← 返回联系表单</a><br>
+            <a href="terms_zh.html" class="back-link">📖 查看使用条款</a>
+        </footer>
+    </div>
+</body>
+
+</html>
