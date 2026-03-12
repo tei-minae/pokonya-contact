@@ -137,10 +137,31 @@
             <button type="submit" class="submit-btn">内容を送信する</button>
         </form>
 
-        <footer>
-            <a href="terms.html"
-                style="color: var(--primary-color); text-decoration: none; font-weight: bold;">利用規約を確認する</a><br>
-            &copy; 2026 pokonya - Raccoon Shop
+        <footer style="margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+            <p style="margin-bottom: 15px; font-weight: bold; color: var(--primary-color);">ご利用前に必ずご確認ください</p>
+            <a href="terms.html" class="terms-btn">📖 利用規約 (Terms of Use)</a>
+            <style>
+                .terms-btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    color: var(--primary-color);
+                    border: 2px solid var(--primary-color);
+                    border-radius: 20px;
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+                    margin-bottom: 20px;
+                }
+
+                .terms-btn:hover {
+                    background-color: var(--primary-color);
+                    color: white;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                }
+            </style>
+            <p style="margin-top: 10px;">&copy; 2026 pokonya - Raccoon Shop</p>
         </footer>
     </div>
 </body>
