@@ -7,47 +7,67 @@
     <title>お問い合わせ - ぽこにゃの掘り出し物</title>
     <style>
         :root {
-            --primary-color: #5d4037;
-            --background-color: #f5f5f5;
-            --container-bg: #ffffff;
-            --text-color: #333;
-            --border-color: #ddd;
+            --primary: #5d4037;
+            --bg: #f5f5f5;
+            --card: #fff;
+            --border: #ddd;
         }
 
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', sans-serif;
+            background: var(--bg);
             margin: 0;
             padding: 20px;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             min-height: 100vh;
         }
 
         .container {
-            background: var(--container-bg);
+            background: var(--card);
             padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
             max-width: 600px;
             width: 100%;
         }
 
+        .lang {
+            text-align: right;
+            margin-bottom: 16px;
+            font-size: .8rem;
+        }
+
+        .lang a {
+            margin-left: 8px;
+            text-decoration: none;
+            color: var(--primary);
+            padding: 2px 6px;
+            border: 1px solid var(--primary);
+            border-radius: 4px;
+        }
+
+        .lang a:hover,
+        .lang strong {
+            background: var(--primary);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
         h1 {
-            color: var(--primary-color);
+            color: var(--primary);
             font-size: 1.5rem;
-            margin-bottom: 20px;
             text-align: center;
-            border-bottom: 2px solid var(--primary-color);
+            border-bottom: 2px solid var(--primary);
             padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 0.9rem;
-            margin-bottom: 30px;
+            font-size: .9rem;
+            margin-bottom: 25px;
         }
 
         .form-group {
@@ -56,16 +76,17 @@
 
         label {
             display: block;
-            margin-bottom: 5px;
             font-weight: bold;
+            margin-bottom: 5px;
         }
 
         input[type="text"],
         input[type="email"],
-        textarea {
+        textarea,
+        select {
             width: 100%;
             padding: 10px;
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--border);
             border-radius: 4px;
             box-sizing: border-box;
             font-size: 1rem;
@@ -77,35 +98,58 @@
         }
 
         .submit-btn {
-            background-color: var(--primary-color);
+            background: var(--primary);
             color: white;
-            padding: 12px 20px;
+            padding: 12px;
             border: none;
             border-radius: 4px;
-            cursor: pointer;
             width: 100%;
             font-size: 1.1rem;
-            transition: opacity 0.3s;
+            cursor: pointer;
+            transition: opacity .3s;
         }
 
         .submit-btn:hover {
-            opacity: 0.9;
+            opacity: .85;
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 40px;
             text-align: center;
-            font-size: 0.8rem;
-            color: #777;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+
+        .terms-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all .3s;
+            margin-bottom: 16px;
+        }
+
+        .terms-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <div class="lang">
+            <strong>JP</strong>
+            <a href="en/index.html">EN</a>
+            <a href="ko/index.html">KO</a>
+            <a href="zh/index.html">ZH</a>
+        </div>
         <h1>お問い合わせ - ぽこにゃの掘り出し物</h1>
-        <p>当ショップの商品に関するご質問、不具合報告、またはリクエスト等、以下のフォームよりお気軽にお問い合わせください。</p>
-
+        <p>商品に関するご質問、不具合報告、またはリクエストなど、以下のフォームよりお気軽にお問い合わせください。</p>
         <form action="https://ssgform.com/s/n2W0qraNSNzv" method="POST">
             <div class="form-group">
                 <label for="name">お名前</label>
@@ -117,8 +161,7 @@
             </div>
             <div class="form-group">
                 <label for="category">お問い合わせ項目</label>
-                <select id="category" name="category"
-                    style="width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem;">
+                <select id="category" name="category">
                     <option value="質問">商品に関するご質問</option>
                     <option value="不具合">不具合報告</option>
                     <option value="リクエスト">制作リクエスト</option>
@@ -136,32 +179,10 @@
             </div>
             <button type="submit" class="submit-btn">内容を送信する</button>
         </form>
-
-        <footer style="margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 20px;">
-            <p style="margin-bottom: 15px; font-weight: bold; color: var(--primary-color);">ご利用前に必ずご確認ください</p>
+        <footer>
+            <p style="font-weight:bold;color:var(--primary);margin-bottom:12px;">ご利用前に必ずご確認ください</p>
             <a href="terms.html" class="terms-btn">📖 利用規約 (Terms of Use)</a>
-            <style>
-                .terms-btn {
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background-color: transparent;
-                    color: var(--primary-color);
-                    border: 2px solid var(--primary-color);
-                    border-radius: 20px;
-                    text-decoration: none;
-                    font-weight: bold;
-                    transition: all 0.3s ease;
-                    margin-bottom: 20px;
-                }
-
-                .terms-btn:hover {
-                    background-color: var(--primary-color);
-                    color: white;
-                    transform: translateY(-2px);
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                }
-            </style>
-            <p style="margin-top: 10px;">&copy; 2026 pokonya - Raccoon Shop</p>
+            <p style="font-size:.8rem;color:#777;">&copy; 2026 pokonya - Raccoon Shop</p>
         </footer>
     </div>
 </body>
