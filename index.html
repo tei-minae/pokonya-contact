@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お問い合わせ - ぽこにゃの掘り出し物</title>
+    <title>Inquiry - pokonya Raccoon Shop</title>
     <style>
         :root {
             --primary: #5d4037;
@@ -14,7 +14,7 @@
         }
 
         body {
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             background: var(--bg);
             margin: 0;
             padding: 20px;
@@ -143,45 +143,45 @@
 <body>
     <div class="container">
         <div class="lang">
-            <strong>JP</strong>
-            <a href="index_en.html">EN</a>
-            <a href="index_ko.html">KO</a>
-            <a href="index_zh.html">ZH</a>
+            <a href="../index.html">JP</a>
+            <strong>EN</strong>
+            <a href="../ko/index.html">KO</a>
+            <a href="../zh/index.html">ZH</a>
         </div>
-        <h1>お問い合わせ - ぽこにゃの掘り出し物</h1>
-        <p>商品に関するご質問、不具合報告、またはリクエストなど、以下のフォームよりお気軽にお問い合わせください。</p>
+        <h1>Inquiry - pokonya Raccoon Shop</h1>
+        <p>For questions, bug reports, or feature requests regarding our products, please use the form below.</p>
         <form action="https://ssgform.com/s/n2W0qraNSNzv" method="POST">
             <div class="form-group">
-                <label for="name">お名前</label>
-                <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name">
             </div>
             <div class="form-group">
-                <label for="email">メールアドレス</label>
+                <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required placeholder="example@gmail.com">
             </div>
             <div class="form-group">
-                <label for="category">お問い合わせ項目</label>
+                <label for="category">Category</label>
                 <select id="category" name="category">
-                    <option value="質問">商品に関するご質問</option>
-                    <option value="不具合">不具合報告</option>
-                    <option value="リクエスト">制作リクエスト</option>
-                    <option value="特定商取引法">特定商取引法に基づく開示請求</option>
-                    <option value="その他">その他</option>
+                    <option value="Question (EN)">Question about a product</option>
+                    <option value="Bug (EN)">Bug Report</option>
+                    <option value="Request (EN)">Feature Request</option>
+                    <option value="Legal (EN)">Legal Inquiry</option>
+                    <option value="Other (EN)">Other</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="order_id">注文番号（ご購入済みの場合）</label>
-                <input type="text" id="order_id" name="order_id" placeholder="例：12345678">
+                <label for="order_id">Order ID (if purchased)</label>
+                <input type="text" id="order_id" name="order_id" placeholder="e.g. 12345678">
             </div>
             <div class="form-group">
-                <label for="message">内容</label>
-                <textarea id="message" name="message" required placeholder="お問い合わせ内容をご記入ください"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Please describe your inquiry"></textarea>
             </div>
-            <button type="submit" class="submit-btn">内容を送信する</button>
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
         <footer>
-            <p style="font-weight:bold;color:var(--primary);margin-bottom:12px;">ご利用前に必ずご確認ください</p>
-            <a href="terms.html" class="terms-btn">📖 利用規約 (Terms of Use)</a>
+            <p style="font-weight:bold;color:var(--primary);margin-bottom:12px;">Please read before use</p>
+            <a href="terms.html" class="terms-btn">📖 Terms of Use</a>
             <p style="font-size:.8rem;color:#777;">&copy; 2026 pokonya - Raccoon Shop</p>
         </footer>
     </div>
